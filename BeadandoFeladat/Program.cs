@@ -8,12 +8,13 @@ namespace BeadandoFeladat
 {
     class Program
     {
-        static void Elso()
+        static void Masodik()
         {
-            int[] A = new int[10];
-
-            Console.WriteLine("Írjon be 10 számot!");
-
+            
+            Console.WriteLine("Adja meg, hány számot kérjünk be!");
+            int N= Convert.ToInt32(Console.ReadLine());
+            int[] A = new int[N];
+            Console.WriteLine("Írjon be {0} számot!",N);
             int bekert;
 
             for (int i = 0; i < A.Length; i++)
@@ -41,7 +42,7 @@ namespace BeadandoFeladat
         }
         static void Main(string[] args)
         {
-            Elso();
+            Masodik();
 
 
             Console.ReadLine();
