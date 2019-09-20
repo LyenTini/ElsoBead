@@ -8,7 +8,7 @@ namespace BeadandoFeladat
 {
     class Program
     {
-        static void Masodik()
+        static void Harmadik()
         {
             
             Console.WriteLine("Adja meg, hány számot kérjünk be!");
@@ -36,13 +36,21 @@ namespace BeadandoFeladat
                     max = A[i];
                 }
             }
-            Console.WriteLine("A legnagyobb szám: {0}",max);
+            int min = A[0];
+            for (int i = 0; i < A.Length; i++)
+            {
+                if (min > A[i])
+                {
+                    min = A[i];
+                }
+            }
+            Console.WriteLine("A legnagyobb szám: {0}, a legkisebb: {1}",max,min);
 
 
         }
         static void Main(string[] args)
         {
-            Masodik();
+            Harmadik();
 
 
             Console.ReadLine();
