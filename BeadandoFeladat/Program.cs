@@ -8,7 +8,7 @@ namespace BeadandoFeladat
 {
     class Program
     {
-        static void Harmadik()
+        static void Negyedik()
         {
             try
             {
@@ -57,7 +57,7 @@ namespace BeadandoFeladat
         }
         static void Main(string[] args)
         {
-            Harmadik();
+            Negyedik();
 
             Console.ReadLine();
         }
